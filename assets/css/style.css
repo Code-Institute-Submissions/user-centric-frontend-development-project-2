@@ -1,0 +1,174 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Containers */
+
+.container-wrapper {}
+
+.container-wrapper--grey {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.booking-container {
+  height: 100vh;
+
+  background: url("../images/background-image.jpg") no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description-container {
+    margin-top: 30px;
+}
+
+.testimonials-container {
+}
+
+.contact-container {
+}
+
+.footer-container {
+    top: -17px;
+    text-align: center;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Content */
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Navbar */
+
+.navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 200px;
+}
+
+.btn--gold {
+    color: whitesmoke;
+    background-color: #c3ba0e;
+    border-color: #c3ba0e;
+}
+
+.btn--gold:hover,
+.btn--gold:active,
+.btn--gold:focus,
+.btn--gold:active:focus {
+    background-color: #a8a003;
+    border-color: #a8a003;
+    color: whitesmoke;
+}
+
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 30px;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+
+/* Description */
+
+
+/* Testimonials */
+
+
+/* Contact */
+
+
+/* STYLES AND PRICES */
+
+/* Image Gallery */
+
+
+
+/* Footer */
+
+.footer-container img {
+    margin-bottom: 10px;
+}
+
+.social-links {
+  
+}
+
+.social-links li a i {
+  width: 32px;
+  height: 32px;
+  padding: 12px 0;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 7px;
+  text-align: center;
+  color: #1a1a1a;
+  background: #8f8f8f;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  background-color: #d0ff00;
+}
