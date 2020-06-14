@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -42,22 +42,27 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2">
+            <li class="nav-item mr-2">
               <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="/">Styles & Prices</a>
+            <li class="active nav-item mr-2">
+              <a class="nav-link" href="stylesandprices.html"
+                >Styles & Prices</a
+              >
             </li>
             <li class="nav-item mr-2">
-              <a class="nav-link" href="/">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
         <div class="d-none d-md-block">
-          <p class="navbar-text my-auto mr-2">
-            <i>Make an appointment now!</i>
-          </p>
-          <a href="/" class="btn btn--cta btn--gold">Book Appointment</a>
+          <button
+            class="btn btn--cta btn--gold"
+            data-toggle="modal"
+            data-target="#bookModal"
+          >
+            Book Appointment
+          </button>
         </div>
       </nav>
     </div>
@@ -71,13 +76,7 @@
           <section class="booking jumbotron text-center">
             <img src="assets/images/logo-big.png" />
             <br />
-            <button
-              class="btn btn-lg btn--cta btn--gold"
-              data-toggle="modal"
-              data-target="#bookModal"
-            >
-              Book Appointment
-            </button>
+            <h1>Styles & Prices</h1>
           </section>
         </div>
       </div>
@@ -91,15 +90,16 @@
       </div>
       <div class="description-stylesandprices">
         <p>
-          ESTABLISHED IN 1901, SAM’S IS A FAMILY RUN CHAIN OF BARBERSHOPS THAT
-          COVER ALL ASPECTS OF MENS GROOMING FROM CLASSIC HAIRCUTS & HOT TOWEL
-          SHAVES TO BEARD MAINTENANCE. WITH 5 LOCATIONS THROUGHOUT DUBLIN WE
-          PROVIDE BARBERSHOPS THAT CATER FOR ALL.
+          Newly opened for the new decade, are professionally trained staff
+          offers top quality men's grooming. From classic cuts to the latest
+          styles and beard maintainence, we aim to become the most talked about
+          barbers in the county. Store located in Bansha, County Tipperary.
         </p>
       </div>
     </div>
     <!--./intro-->
 
+    <!-- Styles and Prices -->
     <div class="stylesandprices container">
       <div class="row">
         <div class="col-12 col-md-8">
@@ -221,6 +221,7 @@
         </div>
       </div>
     </div>
+    <!-- /.styles and Prices -->
 
     <!-- Footer -->
     <div class="container-wrapper container-wrapper--grey">
@@ -273,7 +274,7 @@
     </div>
     <!-- /.footer -->
 
-    <!-- Modal -->
+    <!-- Modal Book Appointment-->
     <div class="modal" tabindex="-1" role="dialog" id="bookModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -289,75 +290,70 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form onsubmit="alert('form submitted succesfully'); return false;">
               <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputname">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputname"
+                    required
+                  />
+                </div>
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" />
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Password</label>
                   <input
-                    type="password"
+                    type="email"
                     class="form-control"
-                    id="inputPassword4"
+                    id="inputEmail4"
+                    required
                   />
                 </div>
               </div>
+
               <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress"
-                  placeholder="1234 Main St"
-                />
+                <label for="inputstyle">Style</label>
+                <select class="form-control" id="inputStyle" required>
+                  <option value="volvo">Fade</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
               </div>
-              <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress2"
-                  placeholder="Apartment, studio, or floor"
-                />
-              </div>
+
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity" />
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip">Zip</label>
-                  <input type="text" class="form-control" id="inputZip" />
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
+                  <label for="inputDate">Date</label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="gridCheck"
+                    type="date"
+                    class="form-control"
+                    id="inputDate"
+                    required
                   />
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputTime">Time</label>
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="inputTime"
+                    min="09:00"
+                    max="18:00"
+                    required
+                  />
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary">Sign in</button>
+
+              <button type="submit" class="btn btn-primary">
+                Book Appointment
+              </button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- /.modal -->
+    <!-- /. modal book appointment-->
 
     <!-- JavaScript -->
     <script
