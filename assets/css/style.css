@@ -11,7 +11,7 @@ body {
     color: white;
 }
 
-.booking-container {
+.hero-container {
   height: 100vh;
 
   background: url("../images/background-image.jpg") no-repeat bottom right fixed;
@@ -44,6 +44,7 @@ body {
 }
 
 .contact-container {
+    
 }
 
 .footer-container {
@@ -126,27 +127,78 @@ body {
     margin-bottom: 30px;
     border-bottom: 0;
     text-align: center;
+    font-weight: bold;
 }
 
 .page-header h2 {
     margin-top: 0;
 }
 
-
-/* Description */
-
-
-/* Testimonials */
-
-
-/* Contact */
-
-
 /* STYLES AND PRICES */
 
-/* Image Gallery */
+.intro-stylesandprices {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
+.heading-stylesandprices h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.stylesandprices {
+    margin-bottom: 30px;
+}
+
+.description-stylesandprices {
+    padding-right: 30px;
+    padding-left: 30px
+}
+
+.description-stylesandprices p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.stylesandprices h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.images {
+    padding-right: 0;
+}
+
+.prices {
+    background-color:  #1a1a1a;
+    color: whitesmoke;
+}
+
+/* CONTACT */
+
+.heading-contact h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.contact-info {
+    background-color: whitesmoke;
+}
+
+.contact-form {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    padding-top: 30px;
+}
 
 /* Footer */
 
