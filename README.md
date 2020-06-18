@@ -160,7 +160,10 @@ From there I scrolled down the page to the 'Githun Pages'
 section and change the source from 'none' to 'master branch'. 
 This produced the following link for my live project:
 
-//link goes here
+https://markryanbansha.github.io/user-centric-frontend-development-project/
+
+Link to github profile: 
+https://github.com/markryanbansha
 
 ## Credits
 
