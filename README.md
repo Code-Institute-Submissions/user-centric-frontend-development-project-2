@@ -162,6 +162,9 @@ This produced the following link for my live project:
 
 https://markryanbansha.github.io/user-centric-frontend-development-project/
 
+Link to Github repository: 
+https://github.com/markryanbansha/user-centric-frontend-development-project
+
 Link to github profile: 
 https://github.com/markryanbansha
 
